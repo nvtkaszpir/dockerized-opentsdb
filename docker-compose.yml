@@ -1,7 +1,7 @@
 version: '3'
 services:
   opentsdb:
-    image: gradiant/opentsdb
+    image: quay.io/kaszpir/opentsdb:2.4.0
     environment:
     - ZKQUORUM=zookeeper:2181
     - ZKBASEDIR=/hbase
