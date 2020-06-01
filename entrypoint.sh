@@ -15,6 +15,4 @@ if [[ ! -z "${ZKBASEDIR}" ]]; then
    TSDB_OPTS="$TSDB_OPTS --zkbasedir=$ZKBASEDIR"
 fi
 
-/usr/share/opentsdb/bin/tsdb tsd start $TSDB_OPTS
-
-
+exec /usr/share/opentsdb/bin/tsdb tsd start $TSDB_OPTS
